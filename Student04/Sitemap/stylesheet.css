@@ -1,0 +1,206 @@
+
+    body{
+        line-height: 1.6;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 100%;
+        background-color: #f4ebdf;
+        text-align: center;
+    }
+ *{
+    margin: 0;
+    padding: 0;
+ }
+    /* Header */
+    nav{
+        background-color: #512a14e3;
+        width:100%;
+        height: 3px;
+        margin: auto;
+        padding: 35px 0px;
+        position: fixed;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        backdrop-filter: blur(5px);
+    }
+
+    nav ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0px 20px;
+        font-size: 97%;
+        
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: #f3c39f;
+        font-weight: bold;
+    }
+    nav ul li a:hover,
+    nav ul li a.active{
+        background-color: #886d54db;
+        padding: 10px;
+        border-radius: 5px;
+
+    }
+    .logo{
+        width: 100px;
+        cursor: pointer;
+        margin-left: 350px;
+        display: flex;
+    }
+    .logo img {
+        height: 50px;
+        width: 80px;
+        transition: transform 0.5s;
+    }
+    /*main*/
+    .wrapper{
+        padding-top: 80px;
+        align-items:center;        
+    }
+    /* footer */
+    .footer{
+        background-color: #ddcdbb;
+    }
+
+    .footer a:hover{
+        color: rgb(114, 16, 205);    
+    }
+    .footer p{
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .footer h4{
+        margin-bottom: 1px;
+        padding: 10px 0 0 0;
+        font-weight:bold;
+        text-align: center;
+    }
+    .highlight{
+        background-color: #e8c093;  
+    }
+
+    /* Main Content Styles */
+    .wrapper {
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        color: #aa5522;
+        margin: 70px 0 20px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    p.description {
+        margin-bottom: 30px;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #424141;
+    }
+
+    /* SVG Sitemap Styles */
+    svg {
+        width: 100%;
+        height: auto;
+        max-width: 1200px;
+        min-height: 500px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .node {
+        fill: #f1d3b0;
+        stroke: #c86f37;
+        stroke-width: 2;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .node:hover, .node:focus {
+        fill: #ff8c62;
+        transform: scale(1.05);
+    }
+
+    .node-text {
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        text-anchor: middle;
+        fill: #302525;
+        pointer-events: none;
+        font-weight: bold;
+    }
+
+    .home-node {
+        fill: #c7733f;
+    }
+
+    .home-node-text {
+        fill: #e7e5e5;
+    }
+
+    .level1-node {
+        fill: #f6bd6e;
+    }
+
+    .connection {
+        stroke: #aa5522;
+        stroke-width: 2;
+    }
+
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+            body {
+                font-size: 15px;
+            }
+
+            .logo {
+                margin-left: 20px;
+            }
+
+            nav ul li {
+                margin: 0px 10px;
+                font-size: 80%;
+            }
+
+            svg {
+                height: 500px;
+            }
+
+            .node-text {
+                font-size: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                height: auto;
+                padding: 15px 0;
+            }
+
+            nav ul {
+                margin-top: 15px;
+            }
+
+            nav ul li {
+                margin: 5px;
+                font-size: 70%;
+            }
+
+            .logo {
+                margin-left: 0;
+            }
+
+            svg {
+                height: 400px;
+            }
+        }

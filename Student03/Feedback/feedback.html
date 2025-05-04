@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../../Img/Common/favicon.ico">
+    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="global.css">
+    <title>feedback form</title>
+</head>
+<body>
+
+    <!-- Header with Navigation Bar -->
+    <header id="top">
+        <nav>
+            <!--logo-->
+            <div class="logo">
+                <a href="../../Student02/Homepage/homepage.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+            </div>
+            <!-- Navigation Links -->
+            <ul>
+                <li><a href="../../Student02/Homepage/homepage.html">HOME</a></li>
+                <li><a href="../../Student01/Volunteer/volunteer.html">VOLUNTEER</a></li>
+                <li><a href="../../Student02/Table/table.html">STATISTICS</a></li>
+                <li><a href="../../Student03/Feedback/feedback.html">FEEDBACK</a></li>
+                <li><a href="../../Student04/User profile/Userprofile.html">USER PROFILE</a></li>
+                <li><a href="../../Student04/Sitemap/sitemap.html">SITE MAP</a></li>
+                <li><a href="../../Student03/Aboutus/aboutus.html">ABOUT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Feedback Section -->
+    <section class="feedback">
+        <div class="form-container">
+            <form id="feedbackform" method="POST">
+                <h2 class="feed-topic">Website Client Feedback Form</h2>
+                <h5 class="feed-descript">We would love to hear from you! Please take a moment to let us know about your experience.</h5>
+                <hr>
+
+                <!-- Personal Details -->
+                <fieldset>
+                    <legend>Personal Details</legend>
+                    <label for="name" class="form-label"><b class="req">*</b>Enter Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Peter" required class="form-input">
+
+                    <label for="email" class="form-label"><b class="req">*</b>Enter Your Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="johnpeter@gmail.com" required class="form-input">
+
+                    <label for="phone" class="form-label">Enter Your Telephone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0712345678" class="form-input">
+
+                    <label for="address" class="form-label">Enter Your Address:</label>
+                    <textarea id="address" name="address" rows="4" placeholder="Your address here..." class="form-textarea"></textarea>
+                </fieldset>
+
+                <!-- Feedback Details -->
+                <fieldset>
+                    <legend>Feedback Details</legend>
+                    <label for="comment" class="form-label"><b class="req">*</b>Your Comment or Message:</label>
+                    <textarea id="comment" name="comment" rows="6" placeholder="Your message here..." maxlength="500" class="form-textarea"></textarea>
+                    <p id="charCount">500 characters remaining</p>
+
+                    <label for="feedback_type" class="form-label">Type of Feedback:</label>
+                    <select id="feedback_type" name="feedback_type" class="form-select">
+                        <option value="general">General Feedback</option>
+                        <option value="bug">Bug Report</option>
+                        <option value="suggestion">Suggestion</option>
+                    </select>
+
+                    <label for="topics" class="form-label">Topics of Interest (Select multiple):</label>
+                    <select id="topics" name="topics" multiple class="form-select">
+                        <option value="wildfires">Wildfires</option>
+                        <option value="safety">Safety Tips</option>
+                        <option value="environment">Environment</option>
+                        <option value="volunteer">Volunteer Opportunities</option>
+                    </select>
+
+                    <label for="suggestions" class="form-label">Suggestions (Searchable):</label>
+                    <input list="suggestionsList" id="suggestions" name="suggestions" class="form-input">
+                    <datalist id="suggestionsList">
+                        <option value="More visuals">
+                        <option value="Better navigation">
+                        <option value="More detailed statistics">
+                    </datalist>
+
+                    <label class="form-label">Preferred Contact Method:</label>
+                    <div class="group-option">
+                        <input type="checkbox" id="contact_email" name="contact_method" value="email">
+                        <label for="contact_email">Email</label>
+                        <input type="checkbox" id="contact_sms" name="contact_method" value="sms">
+                        <label for="contact_sms">SMS</label>
+                        <input type="checkbox" id="contact_phone" name="contact_method" value="phone">
+                        <label for="contact_phone">Phone</label>
+                    </div>
+
+                    <label for="date" class="form-label">Select a Date:</label>
+                    <input type="date" id="date" name="date" class="form-input">
+
+                    <label for="datetime" class="form-label">Select Date and Time:</label>
+                    <input type="datetime-local" id="datetime" name="datetime" class="form-input">
+
+                    <label for="file" class="form-label">Upload Attachment:</label>
+                    <input type="file" id="file" name="file" class="form-input">
+
+                    <label class="form-label">Rate Your Experience:</label>
+                    <div class="emoji-rating">
+                        <button type="button" class="emoji-btn" data-value="1">😠</button>
+                        <button type="button" class="emoji-btn" data-value="2">😕</button>
+                        <button type="button" class="emoji-btn" data-value="3">😐</button>
+                        <button type="button" class="emoji-btn" data-value="4">🙂</button>
+                        <button type="button" class="emoji-btn" data-value="5">😍</button>
+                    </div>
+                    <input type="hidden" id="emoji-rating-value" name="emoji-rating-value">
+                </fieldset>
+
+                <div class="form-buttons">
+                    <input type="button" id="formpreview" value="Preview" class="btn" onclick="previewForm()">
+                    <button type="submit" id="formsubmit" class="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Preview Modal -->
+    <div id="previewModal" class="preview-container">
+        <div class="preview-box">
+            <h3>Preview of Your Feedback📋</h3>
+            <div id="previewContent"></div>
+            <button onclick="closePreview()">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Our website is dedicated to raising awareness about the American Wildfire crisis of 2025, providing valuable information and resources to the public.</p>
+        <div class="highlight">
+            <p>&copy; All Rights Reserved. Designed by 
+                <a href="../../Student03/PageEditor/pageeditor.html">
+                    <i>Biyoni Pietersz</i>
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f1d3b0; /* Match the background color of the navigation bar */
+}
+
+/* Feedback Section */
+.feedback {
+    padding: 65px 20px 15px;
+    background-color: #feefe6; /* White background for the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: auto; /* Reduced margin-top to prevent overlap */
+}
+
+.form-container {
+    padding: 20px;
+    text-align: center; /* Center the heading, subheading, and form elements */
+}
+
+.feed-topic {
+    font-size: 28px;
+    font-weight: 700;
+    color: #986b37; /* Dark brown color to match the navigation bar */
+    margin-bottom: 12px;
+}
+
+.feed-descript {
+    font-size: 16px;
+    color: #302525; /* Slightly lighter brown */
+    margin-bottom: 20px;
+}
+legend{
+    font-size: 20px;
+    margin: 18px auto;
+}
+/* Colored line after the subheading */
+.form-container hr {
+    border: 0;
+    height: 3px;
+    background-color: #ad7b41; /* Light brown color */
+    margin: 20px auto; /* Center the line */
+    width: 70%; /* Adjust the width of the line */
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 17px; /* Increased space below each label */
+    font-weight: bold;
+    color: #2f2013; /* Dark brown color */
+}
+
+.form-input,
+.form-textarea,
+.form-select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 25px; /* Increased space below each input/textarea/select */
+    border-radius: 7px;
+    border: 1px solid #aa855b; /* Light brown border */
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center; /* Center text inside inputs and textareas */
+}
+
+.form-input:focus,
+.form-textarea:focus,
+.form-select:focus {
+    border-color: #2f2013; /* Dark brown border on focus */
+    outline: none;
+}
+
+/* Style for the multiple select dropdown */
+.form-select[multiple] {
+    height: auto; /* Allow the dropdown to expand */
+    padding: 10px;
+    text-align: left; /* Align text to the left */
+    background-color: #ffffff; /* Ensure background is white */
+    border: 1px solid #aa855b; /* Light brown border */
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+/* Style for the options in the dropdown */
+.form-select[multiple] option {
+    padding: 5px;
+    background-color: #ffffff; /* Ensure options have a white background */
+    color: #2f2013; /* Dark brown text color */
+}
+
+/* Hover effect for options */
+.form-buttons{
+    padding: 10px;
+}
+.form-select[multiple] option:hover {
+    background-color: #e78ab1; /* Light pink hover background */
+}
+
+.form-buttons .btn {
+    padding: 15px 20px;
+    margin: 8px;
+    background-color: #aa855b; /* Light brown background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.form-buttons .btn:hover {
+    background-color: #ee93cc; /* Dark blue background on hover */
+}
+
+.group-option {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center radio buttons and labels */
+    margin-bottom: 25px; /* Increased space below each group of options */
+}
+
+.group-option label {
+    font-weight: normal;
+    color: #302525; /* Slightly lighter brown */
+}
+
+.rating-scale {
+    display: flex;
+    gap: 10px;
+    justify-content: center; /* Center rating scale options */
+    margin-bottom: 25px; /* Increased space below the rating scale */
+}
+
+.rating-scale label {
+    font-weight: normal;
+    color: #302525; /* Slightly lighter brown */
+}
+
+.emoji-rating {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.emoji-btn {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.emoji-btn.selected {
+    transform: scale(1.2);
+    border: 2px solid #e78ab1; /* Dark brown border for selected emoji */
+}
+
+#charCount {
+    font-size: 12px;
+    color: #302525;
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.preview-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.preview-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.preview-box h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f2013; /* Dark brown color */
+    margin-bottom: 15px;
+}
+
+.preview-box p {
+    font-size: 14px;
+    color: #302525; /* Slightly lighter brown */
+    margin-bottom: 10px;
+}
+
+.preview-box button {
+    padding: 10px 20px;
+    background-color: #aa855b; /* Light brown background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.preview-box button:hover {
+    background-color: #583d25; /* Dark brown background on hover */
+}
