@@ -52,4 +52,4 @@ This project leverages modern web technologies to deliver a seamless experience:
 1. **Clone the Repository**  
    Use the following command to clone the project:  
    ```bash
-   git clone https://github.com/username/repository-name.git
+   git clone https://github.com/biyoni12/ember-echo-wildfire-awareness
