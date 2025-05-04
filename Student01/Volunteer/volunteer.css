@@ -1,0 +1,524 @@
+/* Existing styles */
+
+.bg-photo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+.head-top{
+    box-shadow: 0px 2px 4px black;
+    border-radius: 10px;
+    background-color: #f9d2a5 ;
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+}
+.topic {
+    color: rgb(48, 17, 2);
+    font-size: 35px;
+    font-weight: 800;
+}
+.description {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+.overview h2 {
+    color: rgb(42, 42, 42);
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+.overview p {
+    font-size: 18px;
+    text-align: center;
+    padding: 8px 50px;
+}
+.introduction h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.introduction ul {
+    list-style-type: disc !important;
+    font-family: 'Courier New', Courier, monospace;
+    list-style-position: inside;
+    
+}
+/*highlights card */
+.highlights-section{
+    background-color: #A5B68D;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 880px;
+    margin: 20px auto;
+    text-align: left;
+    
+
+}
+.highlights-section ul{
+    list-style-type: disc;
+    padding: 0;
+    text-align: left;
+    
+}
+.highlights-section li{
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.5;
+    text-align: left;
+}
+.highlights-section li b{
+    color: #333;
+}
+
+.overview p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+}
+.programs h2 {
+    text-align: left;
+    padding: 20px;
+    
+}
+.program h3, p {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/*Dropdown button */
+.dropdown{
+    position: realative;
+    display: inline-block;
+}
+.dropdown-button{
+    background-color: #f77f7f;
+    border-color: #FF6B6B;
+    color: white;
+    padding: 15px 22px;
+    font-size: 18px; 
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #F0EBE3;
+    min-width: 800px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1; /*Ensures tht dropdown appears above other content */
+}
+.dropdown-content a{
+    color: #333;
+    padding: 12px 16px;
+    text-align: left;
+    justify-content: left;
+    text-decoration: none;
+    display: block; /*Links stack vertically */
+    transition: background-color 0.3s ease;
+}
+.dropdown-content a:hover{
+    background-color: #FFD09B;
+}
+.dropdown:hover .dropdown-content{
+    display: block; 
+}
+.dropdown:hover .dropdown-button{
+    background-color:rgb(68, 68, 68);
+}
+
+/*volunteer cards section */
+.programs{
+    display: flex; /*keep it horizontally */
+    flex-wrap: wrap; /*wrap content when its not fitted on screen */
+    justify-content: center;
+    gap: 80px;
+    padding: 40px 10%;
+    background-color: #FFEFEF;
+}
+
+/*Individual volunteer cards */
+.card{
+    width: 350px;
+    background-color: #F0EBE3;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    background-color: #F3D0D7;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/*card image */
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* card titile */
+.card h3{
+    font-size: 22px; 
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+/*icons from Bootstrap*/
+.card p svg {
+    margin-right: 5px;
+    fill: #D70654;
+}
+
+/* description text */
+.desc {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+/*buttons */
+.view-project{
+    background-color: #FFD09B;
+    border-color: #FFD09B;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+.view-project:hover{
+    background-color: #dcae7a;
+    border-color: #dcae7a;
+}
+
+.enroll-now{
+    background-color: #A5B68D;
+    border-color: #A5B68D;
+    width: 100%;
+    text-align: center;
+    padding: 8px 12px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+}
+
+.enroll-now:hover{
+    background-color: #8b9f6f;
+    border-color: #8b9f6f;
+    
+}
+.view-project, .enroll-now{
+    display: inline-block;
+}
+
+/* Displaying star rating */
+.rating h1, .rating h2, .rating h4{
+    text-align: left;
+    padding : 20px;
+    text-align: center;
+    color: black;
+    justify-content: flex-start; /*left */
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0; /*remove default margins for better alignment */
+}
+.rating h1, .rating h4{
+    line-height: 0.0;
+    margin: 0; 
+    padding:left 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rating h2{
+    color: #333; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.rating h1{
+    font-size: 40px;
+    color: gold;
+    padding-bottom: 10px;
+    font-family: Georgia, serif;
+}
+
+/*Reviews section */
+.reviews-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px; /* space between the cards */
+    max-width: 1200px;
+    margin: 30px auto; 
+    padding: 20px;
+    background-color: rgb(242, 218, 161);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.review-content {
+    max-width: 500px; /* Adjust width */
+    margin-left: 5px;
+}
+
+.more-info{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #545454;
+    align-items: left;
+    justify-content: left;
+    line-height: 0.5;
+    margin-left: 5px;
+}
+
+/*more-reviews button */
+.more-reviews button{
+    align-items: left;
+    background-color: #A5B68D;
+    font-size: 16px;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+.more-reviews button:hover{
+    transform: scale(1.05);
+}
+
+/*individual review cards */
+.review-card {
+    flex: 0 1 calc(45% - 40px); /* This makes cards take up roughly 45% of the container width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #eee6d8;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    
+}
+
+.review-card img {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+} 
+.review-card .avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 25px;
+}
+
+.review-card h3 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.review-card .stars {
+    font-size: 18px;
+    color: gold;
+    margin: 8px 0;
+}
+
+.reviewer-info{
+    font-weight: bold;
+    align-items: left;
+    justify-content: left;
+    line-height: 1.0;
+    margin-bottom: 10px;
+}
+
+.review-card .review-content {
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+    line-height: 1.4;
+}
+
+.review-card .more-info {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+/* Feedback Form Styles */
+.feedback-form {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 30px;
+    background-color: #f0e8dc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.form-description {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+}
+
+.rating-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.rating-selection p {
+    margin-right: 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+.star-rating {
+    display: flex;
+}
+
+.star {
+    font-size: 30px;
+    color: #ccc;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: color 0.3s ease;
+}
+
+.star:hover, .star:hover ~ .star {
+    color: gold;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: #A5B68D;
+    outline: none;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.submit-button {
+    background-color: #A5B68D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #819466;
+    transform: scale(1.05);
+}
+
+.cancel-button {
+    background-color: #ccc;
+    color: #444;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #858282;
+    color: white;
+}
+
+.emoji {
+    font-size: 25px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.final-1, .final-2{
+    /* background-color: #F3D0D7; */
+    background-color: #f3bea6;
+}
+.other-details{
+    flex-wrap: wrap;
+    align-items: left;
+    align-content: left;
+    
+}
+.other-details img{
+    height: 150px;
+    width: auto;
+    margin: 30px;
+}
+.contact{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    line-height: 1.8;
+    margin: 20px;
+}
+.contact-us{
+    font-size: 30px;
+    margin: 10px;
+    font-weight: bold;
+}

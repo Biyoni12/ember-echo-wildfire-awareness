@@ -1,0 +1,91 @@
+/* Main Logo and Title Styling */
+.main-logo-container {
+    padding: 25px;
+    background-color: #f7f0e3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(234, 187, 160, 0.504);
+    margin-bottom: 20px;
+}
+
+.wildfire-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    margin-left: 20px; 
+}
+
+.wildfire-logo img {
+    width: 60px;
+    height: 45px;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    color: #a62617;
+}
+
+h1 {
+    font-size: 30px;
+    color: #441a04;
+    margin-bottom: 10px;
+}
+
+/* Table Styles */
+.table-class {
+    background: rgb(253, 237, 223);
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px; /* Adds some spacing inside the container */
+}
+
+/* Table Styles */
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin: 50px auto;
+}
+
+th {
+    background-color:rgb(237, 194, 137);
+    color: black;
+    font-weight: bold;
+}
+
+th, td {
+    padding: 15px; /* Adds spacing inside cells */
+    text-align: left; /* Aligns text to the left */
+    border: 1px solid rgb(144, 105, 55);
+}
+
+td{
+    background-color:rgb(242, 224, 201);
+}
+
+.more-info {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.info-link {
+    color: #d9534f; /* Eye-catching red */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.info-link:hover {
+    text-decoration: underline;
+}
+
+
+.section-header {
+    background-color:rgb(216, 166, 99);
+    font-weight: bold;
+    text-align: center ;
+}

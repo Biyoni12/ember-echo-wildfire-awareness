@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Volunteer Page</title>
+        <link rel="stylesheet" href="global.css">
+        <link rel="stylesheet" href="volunteer.css">
+
+        <!--js-->
+        <script>
+        document.addEventListener('DOMContentLoaded', function() { //ensures the code runs only after the webpage is fully loaded
+            const emojis = document.querySelectorAll('.emoji'); //Selects all elements in the "emoji" class & stores them in "emojis" variable 
+
+            emojis.forEach((emoji, index) => {// loops through each emoji element and attaches a click event listener to it.
+                emoji.addEventListener('click', function() {//when an emoji is clicked, 
+                    emojis.forEach((e, i) => {//for each emoji 'e' in the loop,
+                        if (i <= index) {//if its index(i) <= to the index of the clicked emoji,
+                            e.classList.add('selected'); // Add the 'selected' class for emojis up to the clicked one
+                        } else {
+                            e.classList.remove('selected'); // Remove 'selected' from the others
+                        }
+                    });
+                });
+            });    
+        });
+        </script>
+    </head>
+    <body>
+        <!-- Header with Navigation Bar -->
+        <header id="top">
+            <nav>
+                <!--logo-->
+                <div class="logo">
+                    <a href="../../Student02/Homepage/homepage.html">
+                        <img src="logo.png" alt="Logo">
+                    </a>
+                </div>
+                <!-- Navigation Links -->
+                <ul>
+                    <li><a href="../../Student02/Homepage/homepage.html">HOME</a></li>
+                    <li><a href="../../Student01/Volunteer/volunteer.html">VOLUNTEER</a></li>
+                    <li><a href="../../Student02/Table/table.html">STATISTICS</a></li>
+                    <li><a href="../../Student03/Feedback/feedback.html">FEEDBACK</a></li>
+                    <li><a href="../../Student04/User profile/Userprofile.html">USER PROFILE</a></li>
+                    <li><a href="../../Student04/Sitemap/sitemap.html">SITE MAP</a></li>
+                    <li><a href="../../Student03/Aboutus/aboutus.html">ABOUT US</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="wrapper">
+            <div class="bg-photo" style="background-image:url('volunteer2.jpg'); background-size:cover; background-position:top; height:600px;"></div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <section class="head-top">
+                <h1 class="topic">Volunteer for Wildfire Relief</h1>  
+                <br>
+                <p class="description">🔥 "Wildfires destroy homes—YOU can help rebuild lives!"</p>
+            </section>
+            <br>
+            <section class="introduction">
+                <h2>Join us on our global volunteer programs where we provide: </h2>
+                <br>
+                <ul>
+                    <li>Three meals a day</li>
+                    <li>Free accomodation</li>
+                    <li>No program fee to volunteer</li>
+                </ul>
+                <br>
+            </section>
+            <section class="overview">
+                <h2>Why Volunteer?</h2>
+                <p>Explore opportunities to make a real difference by volunteering in wildfire relief efforts across the United States. Numerous organizations are working tirelessly to support affected communities and ecosystems, and they need your help. Choose from a variety of volunteer roles, including:</p>
+            </section>
+
+            <!--Highlights section-->
+
+            <div class="highlights-section">
+                <ul>
+                    <li><b>Diverse Volunteer Roles:</b> Choose from a variety of impactful programs, including emergency shelter support, debris cleanup, animal rescue, community outreach, rebuilding, and environmental restoration.</li>
+                    <li><b>Locations Across the USA:</b> Programs based in <b>Paradise (California)</b>, <b>Boulder (Colorado)</b>, <b>Medford (Oregon)</b>, <b>Santa Fe (New Mexico)</b>, <b>Redding (California)</b>, <b>Grants Pass (Oregon)</b> and etc.</li>
+                    <li><b>Flexible Durations:</b> A variety of short term and long term projects to choose from.</li>
+                    <li><b>Skill Development:</b> Gain hands-on experience in areas like <b>teamwork</b>, <b>compassion</b>, <b>construction</b>, <b>environmental conservation</b>,<b>community outreach and etc</b>.</li>
+                    <li><b>Immediate Impact:</b> Make a real difference by helping families, animals, and ecosystems recover from devastating wildfires.</li>
+                    <li><b>Supportive Environment:</b> Work alongside experienced coordinators and fellow volunteers in a collaborative and caring atmosphere.</li>
+                    <li><b>No Experience Needed:</b> Most programs welcome volunteers of all skill levels, with training provided on-site.</li>
+                    <li><b>Easy Enrollment:</b> Simple and straightforward sign-up process—click <b>"Enroll Now"</b> to join a project today!</li>
+                </ul>
+            </div>
+
+        <!--Filter volunteer opportunities-->
+            <div class = "dropdown">
+                <button class = "dropdown-button"><span> Filter & Check Your Opportunities </span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5m-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5"/>
+                </svg> </button>
+                <div class = "dropdown-content">
+                    <a href="#">Most Popular</a>
+                    <a href="#">Newest First</a>
+                    <a href="#">Duration (Shortest First)</a>
+                    <a href="#">Duration (Longest First)</a>
+                </div>
+            </div>
+            <br>
+            <br>
+
+        <!--Volunteer opportunities -->
+            <section class = "programs">
+                <!--volunteer card 1 -->
+                    <div class = "card">
+                        <h3>Emergency Shelter Volunteer</h3>
+
+                        <img src ="sideImg.jpg" alt="Emergency shelter volunteer">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>Location: Paradise, California</p>
+                        
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg>Duration: 1-2 weeks</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>Skills needed: Compassion, organization, teamwork</p>
+
+                        <p class="desc">Assist in setting up and managing emergency shelters for families displaced by wildfires. Help with meal destribution, registration, and providing basic necessities.</p>
+
+                        <!--Buttons-->
+                        <button class="view-project">VIEW PROJECT</button>
+                        <button class="enroll-now">ENROLL NOW</button>
+                    </div>
+
+                <!--Volunteer card 2-->
+                    <div class = "card">
+                        <h3>Debris Cleanup Volunteer</h3>
+
+                        <img src="cleanup.jpg" alt="Debris Cleanup Volunteer">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>Location: Boulder, Colorado</p>
+                        
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg>Duration: 3-5 days</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>Skills needed: Physical stamina, safety awareness</p>
+
+                        <p class = "desc">Join efforts to clear debris, ash, and hazardous materials from properties affected by wildfires. Help families begin the recovery process.</p>
+
+                        <!--Buttons-->
+                        <button class="view-project">VIEW PROJECT</button>
+                        <button class="enroll-now">ENROLL NOW</button>
+                        </div>
+        
+                <!--Volunteer card 3-->
+                    <div class = "card">
+                        <h3>Animal Rescue Volunteer</h3>
+
+                        <img src="animal.jpg" alt="Animal Rescue volunteer">
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                            <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                        </svg>Location: Medford, Oregon</p>
+                        
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                        </svg>Duration: 1-2 weeks</p>
+
+                        <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>Skills needed: Animal handling, compassion</p>
+
+                        <p class="desc">Assist in rescuing and caring for pets and livestock displaced by wildfires. Help at local animal shelters or foster animals temporarily.</p>
+                        
+                        <!--Buttons-->
+                        <button class="view-project">VIEW PROJECT</button>
+                        <button class="enroll-now">ENROLL NOW</button>
+                    </div>
+                <!--Volunteer card 4-->
+                <div class = "card">
+                    <h3>Community Outreach Volunteer</h3>
+
+                    <img src="comOutreach.jpg" alt="community outreach volunteer">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>Location: Santa Fe, New Mexico</p>
+                    
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>Duration: 1-2 weeks</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>Skills needed: Communication, empathy, resourcefulness</p>
+
+                    <p class="desc">Help connect wildfire survivors with resources like housing, financial aid, and mental health services. Distribute information and provide support.</p>
+                
+                    <!--Buttons-->
+                    <button class="view-project">VIEW PROJECT</button>
+                    <button class="enroll-now">ENROLL NOW</button>
+                    </div>
+
+                <!--Volunteer card 5-->
+                <div class = "card">
+                    <h3>Rebuilding and Construction Volunteer</h3>
+
+                    <img src="construction.jpg" alt="construction volunteer">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>Location: Redding, California</p>
+                    
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>Duration: 1-3 weeks</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>Skills needed: Construction experience, teamwork</p>
+
+                    <p class="desc">Support rebuilding homes and community structures damaged by wildfires. Skilled volunteers (carpenters, electricians) are especially needed.</p>
+                    
+                    <!--Buttons-->
+                    <button class="view-project">VIEW PROJECT</button>
+                    <button class="enroll-now">ENROLL NOW</button>
+                </div>
+
+                <!--Volunteer card 6-->
+                <div class = "card">
+                    <h3>Environmental Restoration Volunteer</h3>
+
+                    <img src="env.jpg" alt="Environmental Restoration volunteer">
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+                    </svg>Location: Grants Pass, Oregon</p>
+                    
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                    </svg>Duration: 1-3 weeks</p>
+
+                    <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    </svg>Skills needed: Environmental awareness, physical stamina, teamwork</p>
+
+                    <p class="desc"> Participate in reforestation, erosion control, and habitat restoration projects to help heal ecosystems damaged by wildfires. Assist in monitoring and protecting wildlife in affected areas.</p>
+                    
+                    <!--Buttons-->
+                    <button class="view-project">VIEW PROJECT</button>
+                    <button class="enroll-now">ENROLL NOW</button>
+                    </div>
+            </section>
+
+        <!--Review Section-->          
+            <section class="reviews">
+                <div class="rating">
+                    <h2>What recent volunteers said about their experience</h2>
+                    <h1>9.4/10</h1>
+                    <h4>Exceptional</h4>
+                </div>
+                <hr>
+
+                <div class="reviews-container">
+                    <!--Review 1-->
+                    <div class="review-card">
+                        <div class="avatar">
+                            <img src="sarah.png" alt="Sarah">
+                        </div>
+                        <div class="reviewer-info">
+                            <h3 class="name">Sarah Thompson</h3>
+                            <p class="stars">★★★★★</p>
+                            <p class="date">10 Jan 2025</p>
+                        </div>
+                        <div class="review-content">
+                            <p><b>Experience:</b> Volunteering in Paradise, California, was an experience I &apos;ll never forget. 
+                                When I first arrived, the devastation from the wildfires was overwhelming—entire neighborhoods
+                                reduced to ash, families displaced, and a community in shock. But amidst the chaos, I found hope
+                                in the resilience of the people and the dedication of the volunteers.
+
+                                My role was to help set up and manage emergency shelters for families who had lost everything.
+                                I assisted with meal distribution, registration, and providing basic necessities like clothing, 
+                                toiletries, and blankets. It was heartbreaking to see so many people in need, but their gratitude 
+                                and strength kept me going. One moment that stands out was helping an elderly couple find a temporary
+                                home—they hugged me and said,  &apos;You &apos;ve given us hope. &apos; That made all the hard work worth it.
+                                
+                                The days were long, and the work was emotionally draining, but the sense of purpose I felt was unparalleled. 
+                                I met so many incredible people—both volunteers and survivors—who inspired me with their kindness and determination.
+                                The teamwork among the volunteers was amazing; we supported each other through the challenges and celebrated small victories together.
+                                
+                                This experience has changed my perspective on life. It taught me the importance of community, compassion, and taking action when it
+                                matters most. I &apos;m so grateful I could be part of the relief efforts in Paradise, and I encourage anyone who can to volunteer—it
+                                &apos;s tough, 
+                                but it &apos;s one of the most meaningful things you &apos;ll ever do.🥹❤</p>
+                            <p><b>Location:</b> Paradise, California</p>
+                        </div>
+                        <div class="more-info">
+                            <p>Profile: American, 28</p>
+                            <p>Volunteer Role: Emergency Shelter Volunteer</p>
+                        </div>
+                    </div>
+
+                    <!--Review 2-->
+                    <div class="review-card">
+                        <div class="avatar">
+                            <img src="carlos.png" alt="Carlos">
+                        </div>
+                        <div class="reviewer-info">
+                            <h3>Carlos Mendez</h3>
+                            <p class="stars">★★★★☆</p>
+                            <p class="date">03 Feb 2025</p>
+                        </div>
+                        <div class="review-content">
+                            <p><b>Experience: </b>Clearing debris in Boulder was hard work, 
+                                but it felt good to help families start rebuilding their lives.
+                                The organizers were very supportive, and I met so many inspiring 
+                                people. I&rsquo;d do it again in a heartbeat!</p>
+                            <p><b>Location: </b>LA, California</p>
+                        </div>
+                        <div class="more-info">
+                            <p>Profile: Mexican, 35</p>
+                            <p>Volunteer Role: Debris Cleanup Volunteer</p>
+                        </div>
+                    </div>
+
+                    <!--Review 3-->
+                    <div class="review-card">
+                        <div class="avatar">
+                            <img src="sonali.png" alt="Sonali">
+                        </div>
+                        <div class="reviewer-info">
+                            <h3>Sonali Deraniyagala</h3>
+                            <p class="stars">★★★★★</p>
+                            <p class="date">25 Feb 2025</p>
+                        </div>
+                        <div class="review-content">
+                            <p><b>Experience: </b>Volunteering in Grants Pass was one of the most fulfilling experiences of my life. Coming from Sri Lanka,
+                                I&rsquo;ve witnessed firsthand how natural disasters can devastate communities and ecosystems. When I heard about the wildfires
+                                    in Oregon, I knew I had to help. Joining the environmental restoration team allowed me to contribute to something bigger than myself.
+
+                                We worked on reforestation projects, planting hundreds of trees to restore the burned areas. It was physically demanding, but every sapling 
+                                we planted felt like a step toward healing the land. I also helped with erosion control measures, which was fascinating to learn about. One of 
+                                the most touching moments was when we spotted wildlife returning to the areas we were restoring; it felt like nature was thanking us.
+                                
+                                The team was incredibly supportive, and I made friends from all over the world. It was inspiring to see people from different backgrounds 
+                                come together for a common cause. As a Sri Lankan, I felt proud to represent my country and contribute to global environmental efforts.
+                                
+                                This experience has deepened my appreciation for nature and the importance of community. I highly recommend volunteering for environmental
+                                restoration...it&rsquo;s hard work, but the impact is truly rewarding.</p>
+                            <p><b>Location: </b>Grants Pass, Oregon</p>
+                        </div>
+                        <div class="more-info">
+                            <p>Profile: Sri Lankan, 29</p>
+                            <p>Volunteer Role: Environmental Restoration Volunteer</p>
+                        </div>
+                    </div>
+
+                    <!--Review 4-->
+                    <div class="review-card">
+                        <div class="avatar">
+                            <img src="emily.png" alt="Emily">
+                        </div>
+                        <div class="reviewer-info">
+                            <h3>Emily Zhang</h3>
+                            <p class="stars">★★★☆☆</p>
+                            <p class="date">15 Jan 2025</p>
+                        </div>
+                        <div class="review-content">
+                            <p><b>Experience: </b>Working with animals in Medford was such a fulfilling experience.
+                                Seeing the relief on pet owners' faces when we reunited them with their furry friends was unforgettable.
+                                I&rsquo;m so glad I could help!</p>
+                            <p><b>Location: </b>Boulder, Colorado</p>
+                        </div>
+                        <div class="more-info">
+                            <p>Profile: Canadian, 22</p>
+                            <p>Volunteer Role: Animal Rescue Volunteer</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        <!--More reviews button-->
+
+            <div class="more-reviews">
+                <button>See all 109 reviews</button>
+            </div>  
+
+        <!--Feedback form-->
+
+            <section class="feedback-form">
+                <h2>Share Your Volunteer Experience</h2>
+                <p class="form-description">We'd love to hear about your experience! Your feedback helps future volunteers and improves our programs.</p>
+                
+                <div id="rating">
+                    <span class="emoji">😠</span>
+                    <span class="emoji">😐</span>
+                    <span class="emoji">🙂</span>
+                    <span class="emoji">😃</span>
+                    <span class="emoji">😍</span>
+                </div>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="location">Volunteer Location:</label>
+                        <select id="location" name="location" required>
+                            <option value="" disabled selected>Select the location where you volunteered</option>
+                            <option value="paradise">Paradise, California</option>
+                            <option value="boulder">Boulder, Colorado</option>
+                            <option value="medford">Medford, Oregon</option>
+                            <option value="santafe">Santa Fe, New Mexico</option>
+                            <option value="redding">Redding, California</option>
+                            <option value="grantspass">Grants Pass, Oregon</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="feedback">Your Review:</label>
+                        <textarea id="feedback" name="feedback" placeholder="Share your volunteer experience here... What did you enjoy? What could be improved?" rows="6"></textarea>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <button type="submit" class="submit-button">Submit Feedback</button>
+                        <button type="button" class="cancel-button">Cancel</button>
+                    </div>
+                </form>
+            </section>
+            
+        <!--Contact details-->
+
+            <section class="final-1">
+                <div class="contact">
+                    <h2 class="contact-us">Contact Us</h2>
+                    <a href="#">info@ember_echovolunteers.com</a>
+                    <a href="#">+64-6-758-7949 | International</a>
+                    <a href="#">1-877-342-6588 | USA/Canada Call Free</a>
+                    <a href="#">0-800-031-8376 | UK Call Free</a>
+                    <a href="#">1-800-557-380  | Australia Call Free</a>
+                </div>
+                <br>
+                <br>
+            </section>
+
+        <!--Logos-->
+            <section class="final-2">
+                <div class="other-details">
+                    <img class="goals" src="UNlogo.png" alt="UN logo">
+                    <img class="goals" src="sus.png" alt="Sustainable Development Goals">
+                    <img class="goals" src="sdgun.jpg" alt="Sustainable Development Goals">
+                    <img class="goals" src="life.png" alt="Sustainable Development Goals">
+                    <img class="goals" src="Charity.png" alt="Charity navigator">
+                    <img class="goals" src="wallethub.jpg" alt="wallethub">
+                </div>
+            </section>
+        </main>
+    </body>
+
+    <!--Footer-->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Our website is dedicated to raising awareness about the American Wildfire crisis of 2025, providing valuable information and resources to the public.</p>
+        <div class="highlight">
+            <p>&copy; All Rights Reserved. Designed by 
+                <a href="../PageEditor/pageeditor.html">
+                    <i>Sandupama Wedamulla</i>
+                </a>
+            </p>
+        </div>
+    </footer>
+</html>
+    

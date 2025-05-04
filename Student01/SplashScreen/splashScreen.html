@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Splash Screen</title>
+        <meta http-equiv="refresh" content="7; url=../../Student02/Homepage/homepage.html"> <!--Wait for 5 secs & direct to home page-->
+        <style>
+            .topic{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                color: black;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                min-height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: white;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-color: peachpuff;
+            }
+
+            .intro {
+                max-width: 900px;
+                margin: 40px;
+                padding: 30px;
+                background-color: rgba(57, 28, 16, 0.6);
+                border-radius: 10px;
+                
+            }
+
+            .members {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 20px;
+                padding: 15px;
+                max-width: 1200px;
+            }
+
+            .box {
+                width: 200px;
+                height: auto;
+                padding: 20px;
+                background-color: rgba(144, 238, 144, 0.9);
+                border: 2px solid lightgreen;
+                border-radius: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 22px;
+                color: black;
+                font-weight: bold;
+                transition: transform 0.3s ease;
+            }
+
+            .box:hover {
+                transform: scale(1.05);
+            }
+        
+
+            @media (max-width: 768px) {
+                .members {
+                    padding: 10px;
+                }
+                
+                .box {
+                    width: 150px;
+                    padding: 20px 15px;
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="topic">EmberEcho</h1>
+        <h3 class="intro">Wildfires are fast-moving disasters that destroy forests, wildlife, and communities worldwide. 
+            Fueled by climate change and human activity, their frequency and intensity are rising. Learn the causes, impacts, and ways to prevent.</h3>
+        
+        <div class="members">
+            <div class="box">Sumaiya Shahudheen</div>
+            <div class="box">Ashvini Nanthakumar</div>
+            <div class="box">Biyoni Pietersz</div>
+            <div class="box">Sandupama Wedamulla</div>
+        </div>
+
+        <!-- <div class="loader"></div> -->
+        <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+    <dotlottie-player src="https://lottie.host/3cf4c841-b729-47fd-b747-b5252516f66f/tAGomgME0I.lottie" 
+    background="transparent" speed="0.5" style="width: 200px; height: 200px" loop autoplay></dotlottie-player>
+
+    </body>
+</html>

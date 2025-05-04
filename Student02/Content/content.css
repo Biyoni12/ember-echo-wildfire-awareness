@@ -1,0 +1,155 @@
+@media (max-width: 768px) { 
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+.causes{
+    text-align: center;
+    margin: 0 auto 10px;
+    padding: 50px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-image: url("fire.jpg");
+}
+h1 {
+    font-size: 45px;
+    font-weight: 800;
+    color: rgb(238, 133, 88);
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* Section Box Styles */
+section {
+    background-color: #fed4be; /* Background color for sections */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 25px;
+    width: 90%;
+    text-align: left;
+    margin: 15px auto 20px;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #5b2106;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #962622;
+    padding:10px 0 0;
+
+}
+p {
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Navigation title */
+.nav-title {
+    color: #5b2106;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    padding: 10px;
+    margin: 0;
+}
+ /* Navigation Menu lists */
+.nav-menu li {
+    margin-bottom: 10px;
+}
+
+.nav-menu li a {
+    padding: 13px;
+    display: inline-block;
+    color: #ecf0f1;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: rgb(238, 137, 94);
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-menu li a:hover {
+    background-color: rgb(194, 91, 17);
+    transform: translateY(-6px);
+}
+
+/* Flexbox Layout for Paragraph and Image */
+.overview {
+    display: flex; 
+    align-items: flex-start; 
+    gap: 30px; 
+}
+
+/* Image Container */
+.image-container {
+    flex: 0 0 auto; 
+    width: 50%; 
+    text-align: center; 
+}
+
+/* Responsive Images */
+.responsive-image {
+    max-width: 90%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+}
+
+/* Caption Styling */
+.image-container figcaption {
+    margin-top: 10px; 
+    font-style: italic; 
+    color: #373636; 
+    font-size: 0.9em; 
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px; /* Rounded corners for gallery images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for gallery images */
+}
+
+.gallery-grid img:hover{
+    transform: translateY(10px);
+}
+
+
+/* Go to Top Button */
+#go-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #d38257;
+    color: #333;
+    padding: 10px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
+}
+
+#go-to-top:hover {
+    background-color: #fab895;
+}
